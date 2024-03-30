@@ -1,0 +1,74 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String         @id @default(auto()) @map("_id") @db.ObjectId
+  name         String?
+  email        String?        @unique
+  image        String?
+  password     String?
+  createdAt    DateTime       @default(now())
+  favoritIds   String[]       @db.ObjectId
+  accounts     Account[]
+  listings     Listings[]
+  reservations Reservations[]
+}
+
+model Account {
+  id                String  @id @default(auto()) @map("_id") @db.ObjectId
+  userId            String  @db.ObjectId
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.String
+  access_token      String? @db.String
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.String
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Listings {
+  id              String         @id @default(auto()) @map("_id") @db.ObjectId
+  title           String
+  description     String
+  imagesrc        String
+  createdAt       DateTime       @default(now())
+  roomAccount     Int
+  bathroomAccount Int
+  gestCount       Int
+  price           Int
+  type            String
+  locationValue   String
+  userId          String         @db.ObjectId
+  location        Json?
+  user            User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  reservations    Reservations[]
+          
+  
+}
+
+model Reservations {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId     String   @db.ObjectId
+  listingId  String   @db.ObjectId
+  startDate  String
+  endDate    String
+  totalPrice Int
+  createdAt  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  Listing    Listings @relation(fields: [listingId], references: [id], onDelete: Cascade)
+}
