@@ -29,7 +29,7 @@ function Auth({ setOpenAuth }: Props) {
         await signIn('credentials', { email: data.email, password: data.password, callbackUrl: '/' })
         navigate.push('/')
     }, [
-        data
+        data,navigate
     ])
     const Register = async () => {
         await axios.post('/api/register', { email: data.email, password: data.password, name: data.name }).then((res) => console.log(res)).catch((err) => console.log(err));
@@ -61,7 +61,7 @@ function Auth({ setOpenAuth }: Props) {
                     <div onClick={() => { signIn('github') }} className='w-full'>
                         <Button type={true} title='Continue with Github' Icon={BsGithub} />
                     </div>
-                    <h2 className='mx-6 text-base'>Don't have account? <span onClick={() => setAuth(!auth)} className='font-bold border-b-[1px] cursor-pointer border-black'>Sign up</span> </h2>
+                    <h2 className='mx-6 text-base'>you have account? <span onClick={() => setAuth(!auth)} className='font-bold border-b-[1px] cursor-pointer border-black'>Sign up</span> </h2>
                 </div> :
                 <div className='flex flex-col  justify-start items-start w-full'>
                     <AiOutlineClose size={20} className='absolute mt-2 ml-3 cursor-pointer' onClick={() => setOpenAuth(false)} />
@@ -86,7 +86,7 @@ function Auth({ setOpenAuth }: Props) {
                     <div className='w-full' onClick={() => { signIn('github', { callbackUrl: '/' }) }}>
                         <Button type={true} title='Continue with Github' Icon={BsGithub} />
                     </div>
-                    <h2 className='mx-6 text-sm'>Don't have account? <span onClick={() => setAuth(!auth)} className='font-bold border-b-[1px] cursor-pointer border-black'>Sign up</span> </h2>
+                    <h2 className='mx-6 text-sm'>Don&apos;t have account? <span onClick={() => setAuth(!auth)} className='font-bold border-b-[1px] cursor-pointer border-black'>Sign up</span> </h2>
                 </div>
 
             }
