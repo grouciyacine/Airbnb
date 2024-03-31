@@ -1,3 +1,53 @@
+# Airbnb Clone
+
+![Airbnb Clone Banner](link_to_banner_image)
+
+A clone of the popular Airbnb website built using Next.js, Prisma DB, MongoDB, and Cloudinary for stock images.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+This project is a clone of the Airbnb website, aiming to replicate its core features and user interface using modern web development technologies. Users can browse listings, view details of accommodations, book stays, and more.
+
+## Features
+
+- User authentication and authorization
+- Browse available listings
+- Search for accommodations by location, dates, etc.
+- View detailed information about accommodations
+- Book accommodations
+- Upload and manage images using Cloudinary
+- and more...
+
+## Technologies
+
+- [Next.js](https://nextjs.org/) - React framework for building server-side rendered and static web applications
+- [Prisma](https://www.prisma.io/) - Modern database toolkit for Node.js
+- [MongoDB](https://www.mongodb.com/) - NoSQL database for storing application data
+- [Cloudinary](https://cloudinary.com/) - Cloud-based image and video management service
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [React Hook Form](https://react-hook-form.com/) - Library for flexible and efficient form validation in React
+- [JWT](https://jwt.io/) - JSON Web Tokens for user authentication
+- [Axios](https://axios-http.com/) - Promise-based HTTP client for the browser and Node.js
+- and other dependencies...
+
+## Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/airbnb-clone.git
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
