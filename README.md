@@ -2,13 +2,20 @@
 
 # Airbnb Clone
 
-<img width="926" alt="Screenshot 2024-03-31 175900" src="https://github.com/grouciyacine/Airbnb/assets/107037694/daa2b2d5-e9c5-4b4f-a6ae-688c5bcef022">
+<img width="928" alt="Screenshot 2024-03-31 175900" src="https://github.com/grouciyacine/Airbnb/assets/107037694/daa2b2d5-e9c5-4b4f-a6ae-688c5bcef022">
+
+
+
 
 
 <img width="928" alt="2" src="https://github.com/grouciyacine/Airbnb/assets/107037694/ba2d1348-6a6a-4377-a53b-3109c76cac18">
 
 
-<img width="899" alt="3" src="https://github.com/grouciyacine/Airbnb/assets/107037694/97520dcf-c37e-40d8-9581-c072a183ab6d">
+
+
+
+<img width="928" alt="3" src="https://github.com/grouciyacine/Airbnb/assets/107037694/90b32dd4-1286-4495-8b57-50ab895bd0e5">
+
 
 
 <img src="https://th.bing.com/th/id/OIP.7C44ooS1Q50v15DfaQGkOwHaH-?rs=1&pid=ImgDetMain" alt="Airbnb Clone Banner" width="200" height="200">
