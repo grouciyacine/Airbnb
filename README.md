@@ -1,6 +1,6 @@
 # Airbnb Clone
 
-![Airbnb Clone Banner](link_to_banner_image)
+![Airbnb Clone Banner](https://th.bing.com/th/id/OIP.7C44ooS1Q50v15DfaQGkOwHaH-?rs=1&pid=ImgDetMain)
 
 A clone of the popular Airbnb website built using Next.js, Prisma DB, MongoDB, and Cloudinary for stock images.
 
